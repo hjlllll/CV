@@ -1,0 +1,386 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+    google.load("jquery", "1.3.2");
+</script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<style type="text/css">
+    body {
+        font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1200px;
+    }
+    
+    a:link,
+    a:visited {
+        color: #1F407A;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #1269B0;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+    }
+    
+    h1 {
+        font-weight: 450;
+        line-height: 1.15em;
+    }
+    
+    h2 {
+        font-size: 1.75em;
+        font-weight: 200;
+        margin: 16px 0px 4px 0px;
+    }
+    
+    h3 {
+        font-weight: 300;
+        font-size: 1.15em;
+    }
+    
+    h4 {
+        font-weight: 400;
+        font-size: 1em;
+    }
+    
+    .title {
+        padding: 20px 0px 20px 0px;
+    }
+    
+    section {
+        margin: 16px 0px 16px 0px;
+        text-align: justify;
+        clear: both;
+        line-height: 1.25em;
+    }
+    
+    .author-row {
+        font-size: 20px;
+    }
+    
+    .affil-row {
+        font-size: 22px;
+    }
+    
+    .teaser {
+        max-width: 100%;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .screenshot {
+        width: 256px;
+        border: 1px solid #ddd;
+    }
+    
+    .screenshot-el {
+        margin-bottom: 16px;
+    }
+    
+    hr {
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ddd;
+        margin: 0;
+    }
+    
+    .material-icons {
+        vertical-align: -6px;
+    }
+    
+    p {
+        line-height: 1.25em;
+    }
+    
+    .caption {
+        font-size: 14px;
+        /*font-style: italic;*/
+        color: #666;
+        text-align: left;
+        margin-top: 6px;
+        margin-bottom: 8px;
+    }
+    
+    figure {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #bibtex pre {
+        font-size: 14px;
+        background-color: #eee;
+        padding: 16px;
+    }
+    
+    .flex-row {
+        display: flex;
+        padding-top: 0px;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        line-height: 1.25em;
+    }
+    
+    .paper-btn {
+        position: relative;
+        text-align: center;
+        display: block;
+        margin: 30px auto;
+        padding: 8px 8px;
+        border-width: 0;
+        outline: none;
+        border-radius: 2px;
+        background-color: #2269a0;
+        color: #d5e9ee !important;
+        font-size: 20px;
+        width: 100px;
+        font-weight: 600;
+    }
+    
+    .paper-btn:hover {
+        opacity: 0.85;
+    }
+    
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 1000px;
+        text-align: center;
+    }
+    
+    .col-5 {
+        width: 20%;
+        float: left;
+    }
+    
+    .col-3 {
+        width: 33%;
+        float: left;
+    }
+    
+    .col-2 {
+        width: 50%;
+        float: left;
+    }
+    
+    .author-row p {
+        text-align: center;
+        line-height: 0px;
+    }
+    
+    .author-row img {
+        width: 57%;
+        border-radius: 100%;
+    }
+    
+    .author-row,
+    .affil-row {
+        overflow: auto;
+        margin-top: 10px;
+    }
+    
+    .glb-row {
+        overflow: auto;
+        margin-top: 20px;
+        width: 1200px;
+    }
+    
+    .centered {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .button_row {
+        display: flex;
+        width: 600px;
+    }
+    
+    .bs {
+        background-color: rgb(45, 77, 182);
+        border: 1px solid rgb(195, 195, 195);
+        color: white;
+        width: 120px;
+        height: 40px;
+        font-size: 0.9em;
+        font-weight: 500;
+        margin: 15px;
+        box-shadow: 2px 2px rgb(195, 195, 195), 2px 2px rgb(195, 195, 195), 1px 1px rgb(195, 195, 195);
+    }
+    
+    .bs:hover {
+        opacity: 0.85;
+    }
+</style>
+
+<!-- End : Google Analytics Code -->
+<script type="text/javascript" src="../js/hidebib.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+
+<head>
+    <title>Dynamic 3D Scene Analysis by Point Cloud Accumulation</title>
+    <meta property="og:description" content="Dynamic 3D Scene Analysis by Point Cloud Accumulation" />
+    <script src="https://kit.fontawesome.com/6e21e18363.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@ShengyHuang">
+    <meta name="twitter:title" content="Dynamic 3D Scene Analysis by Point Cloud Accumulation">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://shengyuh.github.io/images/predator_teaser.pdf">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HHDEXF452"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-6HHDEXF452');
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Dynamic 3D Scene Analysis by Point Cloud Accumulation</h1>
+        </div>
+
+        <div class="centered">
+            <div class="author-row">
+                <div class="col-5 text-center">
+                    <a href="https://shengyuh.github.io/"><img src="assets/shengyu_huang.jpg">
+                        <p>Shengyu Huang<sup>1</sup></p>
+                    </a>
+                </div>
+                <div class="col-5 text-center">
+                    <a href="https://zgojcic.github.io/"><img src="assets/zan_gojcic.png">
+                        <p>Zan Gojcic<sup>2</sup></p>
+                    </a>
+                </div>
+                <div class="col-5 text-center">
+                    <a href="https://cg.cs.tsinghua.edu.cn/people/~huangjh/"><img src="assets/jiahui_huang.png">
+                        <p>Jiahui Huang<sup>3</sup></p>
+                    </a>
+                </div>
+                <div class="col-5 text-center">
+                    <a href="https://baug.ethz.ch/en/department/people/staff/personen-detail.MTg3NzU5.TGlzdC82NzksLTU1NTc1NDEwMQ==.html"><img src="assets/andreas_wieser.png"><br>
+                        <p>Andreas Wieser<sup>1</sup></p>
+                    </a>
+                </div>
+                <div class="col-5 text-center">
+                    <a href="https://igp.ethz.ch/personen/person-detail.html?persid=143986"><img src="assets/konrad_schindler.png"><br>
+                        <p>Konrad Schindler<sup>1</sup></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="affil-row">
+                <div class="col-3 text-center"><a href="https://igp.ethz.ch/"><sup>1</sup>ETH Zurich</a></div>
+                <div class="col-3 text-center"><a href="https://nv-tlabs.github.io"><sup>2</sup>NVIDIA</a></div>
+                <div class="col-3 text-center"><a href="https://www.bnrist.tsinghua.edu.cn/"><sup>3</sup>BRCist</a></div>
+            </div>
+            <div class="conference-row">
+                <div class="col-1 text-center">
+                    <a href="https://eccv2022.ecva.net">ECCV 2022</a>
+                </div>
+            </div>
+
+        </div>
+        <p></p>
+
+        <div class="parent">
+            <a href="https://arxiv.org/pdf/2011.13005.pdf"><button class="bs"><span class="fa fa-file-pdf-o fa-fw"></span> Paper</button></a>
+            <a href="https://github.com/prs-eth/PCAccumulation"><button class="bs"><span class="fa fa-github fa-fw"></span> Code</button></a>
+            <a href="https://share.phys.ethz.ch/~gsg/PCAccumulation/"><button class="bs"><span class="fa fa-database fa-fw"></span> Data</button></a>
+        </div>
+        <p></p>
+        <!-- <iframe width="840" height="472" src="https://www.youtube.com/embed/5L2vtuQL8Lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <section id="teaser">
+            <a href="assets/overview.pdf">
+                <img class="centered" width="100%" src="assets/overview.pdf">
+            </a>
+            <p class="caption">
+                <div stype=font-size:10px>
+                    Our method takes in a point cloud sequence of T frames and starts by extracting foreground points (marked yellow) for each frame. To obtain ego motion, T - 1 pairwise registrations are performed. Next, points belonging to dynamic foreground object are extracted using our motion segmentation module (marked orange). To boost subsequent spatio-temporal instance association, we additionally predict per-point offset vectors. After instance association, we finally compute the rigid motion separately for each segmented dynamic object.
+                </div>
+            </p>
+        </section>
+
+        <br>
+        <h2>Abstract</h2>
+        <hr>
+        <div style="width: 100%">
+            <section id="abstract">
+                <figure style="padding-left: 24px; padding-top: 8px; margin-bottom: 0">
+                    <img width="100%" src="assets/teaser.pdf">
+                </figure>
+            </section>
+        </div>
+
+        <div class="flex-row">
+            <div style="width: 100%; font-size:21px">
+                <section id="abstract">
+                    Multi-beam LiDAR sensors, as used on autonomous vehicles and mobile robots, acquire sequences of 3D range scans ("frames"). Each frame covers the scene sparsely, due to limited angular scanning resolution and occlusion. The sparsity restricts the performance of downstream processes like semantic segmentation or surface reconstruction. Luckily, when the sensor moves, frames are captured from a sequence of different viewpoints. This provides complementary information and, when accumulated in a common scene coordinate frame, yields a denser sampling and a more complete coverage of the underlying 3D scene. However, often the scanned scenes contain moving objects. Points on those objects are not correctly aligned by just undoing the scanner's ego-motion. In the present paper, we explore multi-frame point cloud accumulation as a mid-level representation of 3D scan sequences, and develop a method that exploits inductive biases of outdoor street scenes, including their geometric layout and object-level rigidity. Compared to state-of-the-art scene flow estimators, our proposed approach aims to align all 3D points in a common reference frame correctly accumulating the points on the individual objects. Our approach greatly reduces the alignment errors on several benchmark datasets. Moreover, the accumulated point clouds benefit high-level tasks like surface reconstruction.
+                </section>
+            </div>
+        </div>
+
+        <br>
+        <h2>Qualitative results</h2>
+        <hr>
+        <section id="qualitative results">
+            <div style="font-size:21px">
+                We show qualitative examples of scene and object reconstruction with our approach. By jointly estimating the ego-motion of the static part and the moving object motions, our method accumulates the corresponding points into a common, motion-compensated frame. It thus provides an excellent basis for 3D surface reconstruction.
+        </section>
+
+        <div style="font-size:21px ">
+        <h3>Qualitative results on <i>Waymo</i></h3>
+        <figure style= margin-bottom: 0"></figure>
+        <img class="centered" width="100%" src="assets/supp_waymo.pdf">
+        </a>
+        </div>
+
+        <div style="font-size:21px ">
+        <h3>Qualitative results on <i>nuScenes</i></h3>
+        <figure style= margin-bottom: 0"></figure>
+        <img class="centered" width="100%" src="assets/supp_nuscene.pdf">
+        </a>
+         </div>
+
+
+        <div class="container">
+
+            <h2>Citation</h2>
+            <hr>
+            <section id="bibtex">
+                <pre><code>@inproceedings{huang2022accumulation,
+                    title={Dynamic 3D Scene Analysis by Point Cloud Accumulation},
+                    author={Shengyu Huang and Zan Gojcic and Jiahui Huang and Andreas Wieser, Konrad Schindler},
+                    booktitle={European Conference on Computer Vision, ECCV},
+                    year={2022}
+}</code></pre>
+            </section>
+        </div>
+</body>
+
+</html>
