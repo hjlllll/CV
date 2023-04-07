@@ -235,15 +235,15 @@
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
 
 <head>
-    <title>Dynamic 3D Scene Analysis by Point Cloud Accumulation</title>
-    <meta property="og:description" content="Dynamic 3D Scene Analysis by Point Cloud Accumulation" />
+    <title>PREDATOR: Registration of 3D Point Clouds with Low Overlap</title>
+    <meta property="og:description" content="PREDATOR: Registration of 3D Point Clouds with Low Overlap" />
     <script src="https://kit.fontawesome.com/6e21e18363.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@ShengyHuang">
-    <meta name="twitter:title" content="Dynamic 3D Scene Analysis by Point Cloud Accumulation">
+    <meta name="twitter:title" content="PREDATOR: Registration of 3D Point Clouds with Low Overlap">
     <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="https://shengyuh.github.io/eccv2022/assets/teaser.jpg">
+    <meta name="twitter:image" content="https://shengyuh.github.io/images/predator_teaser.jpeg">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HHDEXF452"></script>
@@ -262,24 +262,24 @@
 <body>
     <div class="container">
         <div class="title">
-            <h1>Dynamic 3D Scene Analysis by Point Cloud Accumulation</h1>
+            <h1>PREDATOR: Registration of 3D Point Clouds with Low Overlap</h1>
         </div>
 
         <div class="centered">
             <div class="author-row">
                 <div class="col-5 text-center">
                     <a href="https://shengyuh.github.io/"><img src="assets/shengyu_huang.jpg">
-                        <p>Shengyu Huang<sup>1</sup></p>
+                        <p>Shengyu Huang<sup>*,1</sup></p>
                     </a>
                 </div>
                 <div class="col-5 text-center">
                     <a href="https://zgojcic.github.io/"><img src="assets/zan_gojcic.png">
-                        <p>Zan Gojcic<sup>2</sup></p>
+                        <p>Zan Gojcic<sup>*,1</sup></p>
                     </a>
                 </div>
                 <div class="col-5 text-center">
-                    <a href="https://cg.cs.tsinghua.edu.cn/people/~huangjh/"><img src="assets/jiahui_huang.png">
-                        <p>Jiahui Huang<sup>3</sup></p>
+                    <a href="https://aelphy.github.io/"><img src="assets/mikhail_Usvyatsov.png">
+                        <p>Mikhail Usvyatsov<sup>1</sup></p>
                     </a>
                 </div>
                 <div class="col-5 text-center">
@@ -295,13 +295,13 @@
             </div>
 
             <div class="affil-row">
-                <div class="col-3 text-center"><a href="https://igp.ethz.ch/"><sup>1</sup>ETH Zurich</a></div>
-                <div class="col-3 text-center"><a href="https://nv-tlabs.github.io"><sup>2</sup>NVIDIA</a></div>
-                <div class="col-3 text-center"><a href="https://www.bnrist.tsinghua.edu.cn/"><sup>3</sup>BRCist</a></div>
+                <div class="col-2 text-center"><a href="https://igp.ethz.ch/"><sup>1</sup>ETH Zurich</a></div>
+                <div class="col-2 text-center"><a href="https://igp.ethz.ch/"><sup>*</sup>Equal contribution</a></div>
             </div>
+
             <div class="conference-row">
                 <div class="col-1 text-center">
-                    <a href="https://eccv2022.ecva.net">ECCV 2022</a>
+                    <a href="http://cvpr2021.thecvf.com">CVPR 2021, Oral</a>
                 </div>
             </div>
 
@@ -309,39 +309,41 @@
         <p></p>
 
         <div class="parent">
-            <a href="http://arxiv.org/abs/2207.12394"><button class="bs"><span class="fa fa-file-pdf-o fa-fw"></span> Paper</button></a>
-            <a href="assets/poster.pdf"><button class="bs"><span class="fa fa-file-pdf-o fa-fw"></span> Poster</button></a>
-            <a href="https://github.com/prs-eth/PCAccumulation"><button class="bs"><span class="fa fa-github fa-fw"></span> Code</button></a>
-            <a href="https://share.phys.ethz.ch/~gsg/PCAccumulation/"><button class="bs"><span class="fa fa-database fa-fw"></span> Data</button></a>
+            <a href="https://arxiv.org/pdf/2011.13005.pdf"><button class="bs"><span class="fa fa-file-pdf-o fa-fw"></span> Paper</button></a>
+            <a href="assets/predator_poster.pdf"><button class="bs"><span class="fa fa-file-pdf-o fa-fw"></span> Poster</button></a>
+            <a href="https://github.com/ShengyuH/OverlapPredator"><button class="bs"><span class="fa fa-github fa-fw"></span> Code</button></a>
+            <a href="https://share.phys.ethz.ch/~gsg/Predator/"><button class="bs"><span class="fa fa-database fa-fw"></span> Data</button></a>
         </div>
         <p></p>
-        <iframe width="840" height="472" src="https://www.youtube.com/embed/UFgXNOv1cZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="840" height="472" src="https://www.youtube.com/embed/5L2vtuQL8Lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <section id="teaser">
-            <a href="assets/overview.jpg">
-                <img class="centered" width="100%" src="assets/overview.jpg">
+            <a href="assets/network.png">
+                <img class="centered" width="100%" src="assets/network.png">
             </a>
             <p class="caption">
                 <div stype=font-size:10px>
-                    Our method takes in a point cloud sequence of T frames and starts by extracting foreground points (marked yellow) for each frame. To obtain ego motion, T - 1 pairwise registrations are performed. Next, points belonging to dynamic foreground object are extracted using our motion segmentation module (marked orange). To boost subsequent spatio-temporal instance association, we additionally predict per-point offset vectors. After instance association, we finally compute the rigid motion separately for each segmented dynamic object.
+                    Our method consumes two overlapping point clouds and estimates overlap heatmap, matchability heatmap, and point-wise features. The combined heatmap can be used to guide interest point sampling and to enable robust regsitration under low-overlap regime.
                 </div>
             </p>
         </section>
-
         <br>
         <h2>Abstract</h2>
         <hr>
-        <div style="width: 100%">
-            <section id="abstract">
-                <figure style="padding-left: 24px; padding-top: 8px; margin-bottom: 0">
-                    <img width="100%" src="assets/teaser.jpg">
-                </figure>
-            </section>
-        </div>
-
         <div class="flex-row">
-            <div style="width: 100%; font-size:21px">
+            <div style="width: 54%; font-size:21px">
                 <section id="abstract">
-                    Multi-beam LiDAR sensors, as used on autonomous vehicles and mobile robots, acquire sequences of 3D range scans ("frames"). Each frame covers the scene sparsely, due to limited angular scanning resolution and occlusion. The sparsity restricts the performance of downstream processes like semantic segmentation or surface reconstruction. Luckily, when the sensor moves, frames are captured from a sequence of different viewpoints. This provides complementary information and, when accumulated in a common scene coordinate frame, yields a denser sampling and a more complete coverage of the underlying 3D scene. However, often the scanned scenes contain moving objects. Points on those objects are not correctly aligned by just undoing the scanner's ego-motion. In the present paper, we explore multi-frame point cloud accumulation as a mid-level representation of 3D scan sequences, and develop a method that exploits inductive biases of outdoor street scenes, including their geometric layout and object-level rigidity. Compared to state-of-the-art scene flow estimators, our proposed approach aims to align all 3D points in a common reference frame correctly accumulating the points on the individual objects. Our approach greatly reduces the alignment errors on several benchmark datasets. Moreover, the accumulated point clouds benefit high-level tasks like surface reconstruction.
+                    We introduce PREDATOR, a model for pairwise <b>p</b>oint-cloud <b>re</b>gistration with <b>d</b>eep <b>at</b>tention to the <b>o</b>verlap <b>r</b>egion. Different from previous work, our model is specifically designed to handle (also)
+                    point-cloud pairs with low overlap. Its key novelty is an overlap-attention block for early information exchange between the latent encodings of the two point clouds. In this way the subsequent decoding of the latent representations
+                    into per-point features is conditioned on the respective other point cloud, and thus can predict which points are not only salient, but also lie in the overlap region between the two point clouds. The ability to focus on points that
+                    are relevant for matching greatly improves performance: PREDATOR raises the rate of successful registrations by more than 20% in the low-overlap scenario, and also sets a new state of the art for the <i>3DMatch</i> benchmark with 89%
+                    registration recall.
+                </section>
+            </div>
+            <div style="width: 46%">
+                <section id="abstract">
+                    <figure style="padding-left: 24px; padding-top: 8px; margin-bottom: 0">
+                        <img width="100%" src="assets/teaser.jpeg">
+                    </figure>
                 </section>
             </div>
         </div>
@@ -351,22 +353,19 @@
         <hr>
         <section id="qualitative results">
             <div style="font-size:21px">
-                We show qualitative examples of scene and object reconstruction with our approach. By jointly estimating the ego-motion of the static part and the moving object motions, our method accumulates the corresponding points into a common, motion-compensated frame. It thus provides an excellent basis for 3D surface reconstruction.
+                We evaluate PREDATOR and justify our design choices on real scan data, using <i>3DMatch</i> and <i>3DLoMatch</i>. Additionally, we compare PREDATOR to direct registration methods on the synthetic, object-centric <i>ModelNet40</i> and also
+                showcase the effectiveness of PREDATOR on outdoor real scan <i>odometryKITTI</i>.
         </section>
+        <figure style=m argin-bottom: 0 "></figure>
+        <img class="centered " width="80% " src="assets/qualitative.jpeg ">
+        <br>
 
         <div style="font-size:21px ">
-        <h3>Qualitative results on <i>Waymo</i></h3>
-        <figure style= margin-bottom: 0"></figure>
-        <img class="centered" width="100%" src="assets/supp_waymo.jpg">
+        <h3>More qualitative results on <i>3DMatch</i></h3>
+        <figure style= "margin-bottom: 0"></figure>
+        <img class="centered" width="100%" src="assets/3dmatch_supp.jpg">
         </a>
         </div>
-
-        <div style="font-size:21px ">
-        <h3>Qualitative results on <i>nuScenes</i></h3>
-        <figure style= margin-bottom: 0"></figure>
-        <img class="centered" width="100%" src="assets/supp_nuscene.jpg">
-        </a>
-         </div>
 
 
         <div class="container">
@@ -374,11 +373,12 @@
             <h2>Citation</h2>
             <hr>
             <section id="bibtex">
-                <pre><code>@inproceedings{huang2022accumulation,
-                    title={Dynamic 3D Scene Analysis by Point Cloud Accumulation},
-                    author={Shengyu Huang and Zan Gojcic and Jiahui Huang and Andreas Wieser, Konrad Schindler},
-                    booktitle={European Conference on Computer Vision, ECCV},
-                    year={2022}
+                <pre><code>@inproceedings{predator,
+                title={PREDATOR: Registration of 3D Point Clouds with Low Overlap},
+                author={Shengyu Huang and Zan Gojcic and Mikhail Usvyatsov and Andreas Wieser, Konrad Schindler},
+                booktitle={IEEE Conference on Computer Vision and Pattern Recognition, CVPR},
+                year={2021}
+                }
 }</code></pre>
             </section>
         </div>

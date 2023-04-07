@@ -1,1 +1,5 @@
 .DS_Store
+nfl/
+adjust_image.py
+thumbnail/nfl.png
+index_up_to_date.html
