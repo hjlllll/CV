@@ -1,6 +1,0 @@
-@inproceedings{predator,
-  title={PREDATOR: Registration of 3D Point Clouds with Low Overlap},
-  author={Shengyu Huang and Zan Gojcic and Mikhail Usvyatsov and Andreas Wieser, Konrad Schindler},
-  booktitle={IEEE Conference on Computer Vision and Pattern Recognition, CVPR},
-  year={2021}
-}

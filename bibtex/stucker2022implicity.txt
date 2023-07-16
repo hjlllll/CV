@@ -1,6 +1,0 @@
-@inproceedings{stucker2022implicity,
-  title={{ImpliCity}: City Modeling from Satellite Images with Deep Implicit Occupancy Fields},
-  author={Stucker, Corinne and Ke, Bingxin and Yue, Yuanwen and Huang, Shengyu and Armeni, Iro and Schindler, Konrad},
-  booktitle={ISPRS Annals - ISPRS Congress 2022},
-  year={2022}
-}
