@@ -1,0 +1,7 @@
+@article{zhu2023toward,
+  title={Toward Human-Like Grasp: Functional Grasp by Dexterous Robotic Hand Via Object-Hand Semantic Representation},
+  author={Zhu, Tianqiang and Wu, Rina and Hang, Jinglue and Lin, Xiangbo and Sun, Yi},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2023},
+  publisher={IEEE}
+}
