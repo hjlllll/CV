@@ -1,0 +1,10 @@
+@article{wu2023functional,
+  title={Functional Grasp Transfer Across a Category of Objects From Only one Labeled Instance},
+  author={Wu, Rina and Zhu, Tianqiang and Peng, Wanli and Hang, Jinglue and Sun, Yi},
+  journal={IEEE Robotics and Automation Letters},
+  volume={8},
+  number={5},
+  pages={2748--2755},
+  year={2023},
+  publisher={IEEE}
+}
